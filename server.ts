@@ -40,6 +40,6 @@ app.use('/api/v1/products', productsRouter)
 app.use('/api/v1/user', userRouter)
 
 //port
-const port:Number = 3000
+const port:Number = 8000
 
 app.listen(port, ()=>{console.log('server is running at http://localhost:3000')})
