@@ -42,4 +42,4 @@ app.use('/api/v1/user', userRouter)
 //port
 const port:Number = 8000
 
-app.listen(port, ()=>{console.log('server is running at http://localhost:3000')})
+app.listen(port, ()=>{console.log('server is running at http://localhost:8000')})
