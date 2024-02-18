@@ -1,8 +1,12 @@
 const express = require('express')
 import { Request,  Response, Express } from "express"
+
+//routers
 import userRouter from './routes/user.router'
 import authRouter from './routes/auth.router'
 import productsRouter from './routes/products.router'
+import movieRouter from './routes/movies.router'
+
 import { configDotenv } from "dotenv"
 import { mongoConnect } from "./config/mongoConfig"
 const bodyParser = require("body-parser")
@@ -38,6 +42,7 @@ app.use('/api/v1/products',verify)
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/products', productsRouter)
 app.use('/api/v1/user', userRouter)
+app.use('/api/v1/movies', movieRouter)
 
 //port
 const port:Number = 8000

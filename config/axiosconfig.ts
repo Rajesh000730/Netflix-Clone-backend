@@ -4,4 +4,8 @@ const instance1 = axios.create({
     baseURL:process.env.API_URL_1,
 })
 
-export {instance1}
+const instance2 = axios.create({
+    baseURL:process.env.API_URL_MOVIE
+})
+
+export {instance1, instance2}
