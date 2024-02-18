@@ -47,4 +47,4 @@ app.use('/api/v1/movies', movieRouter)
 //port
 const port:Number = 8000
 
-app.listen(port, ()=>{console.log('server is running at http://localhost:8000')})
+app.listen(port, ()=>{console.log(`server is running at http://localhost:${port}`)})
